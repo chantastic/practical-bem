@@ -27,7 +27,7 @@ The TL;DR on BEM IRL
 
 /*
  * Element
- * Any number of Block-descendents
+ * Any number of Block-descendants
  */
 
 .todo-item__mark { }
@@ -35,7 +35,7 @@ The TL;DR on BEM IRL
 
 /*
 * Modifier
-* Any numbor of Block/Element modifiers
+* Any number of Block/Element modifiers
 */
 
 .todo-item--complete { }
@@ -50,7 +50,7 @@ There are a few alternative BEM dialects. These examples use the most popular [`
 **[⬆ back to top](#table-of-contents)**
 
 ## Entity
-An Entity is a collections of Elements and Modifiers, related to a single Block. Entities are analogous to "modules" or "components" in other CSS phylosophies.
+An Entity is a collections of Elements and Modifiers, related to a single Block. Entities are analogous to "modules" or "components" in other CSS philosophies.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -154,7 +154,7 @@ Now `.todo-item-header` can be composed with Elements from the `.todo-item` Enti
 
 #### Why?
 
-This may seem pendantic but it's critical to how BEM scales. Grandchildren introduce relationships into Entities. Once you have relationships, how many descendents do you cut off at? BEM makes it easy and cuts it off at 1.
+This may seem pedantic but it's critical to how BEM scales. Grandchildren introduce relationships into Entities. Once you have relationships, how many descendants do you cut off at? BEM makes it easy and cuts it off at 1.
 
 ### Relationships
 * Entity `belongs_to` Block
@@ -194,18 +194,18 @@ Prefer this by default:
 ```
 
 ### Alternatives
-Modifiers are the most centested and revised part of the BEM. This mostly stems from a desire to type less or a misunderstanding of early BEM documentation. Granted, it was in pretty poor Engnlish.
+Modifiers are the most contested and revised part of the BEM. This mostly stems from a desire to type less or a misunderstanding of early BEM documentation. Granted, it was in pretty poor English.
 
-While I like variants with global states, e.g., `.is-visible`, it breaks the BEM model. More relevant, it utility-class librarise (e.g., minions.css and tachyons) harder to use.
+While I like variants with global states, e.g., `.is-visible`, it breaks the BEM model. More relevant, it utility-class libraries (e.g., minions.css and tachyons) harder to use.
 
-### Prefer inlen for generic visibily changes
+### Prefer inline for generic visibility changes
 For generic visibility changes, prefer an inline-style on the Block.
 
 ```html
 <!-- ok -->
 <div class="todo-item todo--visible"> ... </div>
 
-<!-- prefered -->
+<!-- preferred -->
 <div class="todo-item" style="display: none"> ... </div>
 ```
 
