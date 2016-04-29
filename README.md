@@ -1,13 +1,14 @@
 # Practical BEM
 The TL;DR on BEM IRL
 
+## Table of contents
+
 1. [BEM anatomy](#bem-anatomy)
 1. [Dialects](#dialects)
 1. [Entity](#entity)
 1. [Block](#block)
 1. [Element](#element)
 1. [Modifier](#modifier)
-1. [Mix](#mix)
 
 ## BEM anatomy
 
@@ -41,11 +42,17 @@ The TL;DR on BEM IRL
 .todo-item--due { }
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Dialects
 There are a few alternative BEM dialects. These examples use the most popular [`--` dialect](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by Harry Robert's. Using `--` for modifiers removes a small ambiguity around [key/value modifiers](https://en.bem.info/methodology/naming-convention/#element-modifier).
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Entity
 An Entity is a collections of Elements and Modifiers, related to a single Block. Entities are analogous to "modules" or "components" in other CSS phylosophies.
+
+**[⬆ back to top](#table-of-contents)**
 
 Practically, Entities should live in a single file and be easily transportable to other projects.
 
@@ -76,6 +83,8 @@ A bunch of Blocks:
 * Block `belongs_to` Entity
 * Block `has_many` Elements
 * Block `has_many` Modifiers
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Element
 An Element is anything nested in a Block.
@@ -151,6 +160,8 @@ This may seem pendantic but it's critical to how BEM scales. Grandchildren intro
 * Entity `belongs_to` Block
 * Entity `has_many` Modifiers
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Modifier
 Modifiers are like HTML attributes. They alter Blocks and Modifiers. They can be **boolean** or **key/value** pairs.
 
@@ -201,3 +212,5 @@ For generic visibility changes, prefer an inline-style on the Block.
 ### Relationships
 * Modifier `belongs_to` Block
 * Modifier `belongs_to` Element
+
+**[⬆ back to top](#table-of-contents)**
