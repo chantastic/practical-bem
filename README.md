@@ -57,7 +57,7 @@ An Entity is a collections of Elements and Modifiers, related to a single Block.
 Practically, Entities should live in a single file and be easily transportable to other projects.
 
 ## Block
-A Blocks is the single, root-level, classes of any Entity.
+A Block is the single, root-level, classes of any Entity.
 
 ```css
 .todo-item { }
@@ -112,7 +112,7 @@ I find Block-Modifiers to be more maintainable than Element-Modifiers. In most c
 ### No grandchildren
 
 BEM supports only one level of element. If you find yourself reaching for Element-Elements (grandchildren), you have two options:
-* Flatten it out the Elements
+* Flatten out the Elements
 * Create a new Block
 
 #### This is incorrect
@@ -194,9 +194,9 @@ Prefer this by default:
 ```
 
 ### Alternatives
-Modifiers are the most contested and revised part of the BEM. This mostly stems from a desire to type less or a misunderstanding of early BEM documentation. Granted, it was in pretty poor English.
+The BEM approach to Modifiers is hotly contested. This stems from a desire to type less or a misunderstanding of early BEM documentation. Granted, the early docs were in pretty poor English.
 
-While I like variants with global states, e.g., `.is-visible`, it breaks the BEM model. More relevant, it utility-class libraries (e.g., minions.css and tachyons) harder to use.
+While I like variants with global states, e.g., `.is-visible`, it breaks the BEM model. More relevant, it makes utility-class libraries (e.g., minions.css and tachyons) harder to use.
 
 ### Prefer inline for generic visibility changes
 For generic visibility changes, prefer an inline-style on the Block.
