@@ -45,7 +45,7 @@ The TL;DR on BEM IRL
 **[⬆ back to top](#table-of-contents)**
 
 ## Dialects
-There are a few alternative BEM dialects. These examples use the most popular [`--` dialect](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by Harry Robert's. Using `--` for modifiers removes a small ambiguity around [key/value modifiers](https://en.bem.info/methodology/naming-convention/#element-modifier).
+There are a few alternative BEM dialects. These examples use the most popular [`--` dialect](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) by Harry Roberts. Using `--` for modifiers removes a small ambiguity around [key/value modifiers](https://en.bem.info/methodology/naming-convention/#element-modifier).
 
 **[⬆ back to top](#table-of-contents)**
 
