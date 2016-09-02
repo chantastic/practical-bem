@@ -163,7 +163,7 @@ This may seem pedantic but it's critical to how BEM scales. Grandchildren introd
 **[⬆ back to top](#table-of-contents)**
 
 ## Modifier
-Modifiers are like HTML attributes. They alter Blocks and Modifiers. They can be **boolean** or **key/value** pairs.
+Modifiers are like HTML attributes. They alter Blocks and Elements. They can be **boolean** or **key/value** pairs.
 
 ```css
 /* boolean */
